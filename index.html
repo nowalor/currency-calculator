@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1 class="heading">Currency calculator</h1>
+        <h3 class="tagline"></h3>
+        <img src="currency-calculator.png" alt="" class="img">
+
+        <div class="form-group">
+            <label class="label" for="from-select">From</label>
+            <select id="from-select"></select>
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="to-select">To</label>
+            <select id="to-select"></select>
+        </div>
+
+        <div class="form-group">
+            <label class="label" for="amount-input">Amount</label>
+            <input id="amount-input" type="number" value="1" min="1"></input>
+        </div>
+
+        <div id="exchanged-value-div" class="amount"></div>
+
+    </div>
+
+
     <script src="secrets.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
